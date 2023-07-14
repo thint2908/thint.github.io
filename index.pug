@@ -1,0 +1,10 @@
+extends ./views/layout/layout-tour.pug
+block vars 
+	-var title = "Home page"
+append head 
+	link(rel='stylesheet' href='./css/main.css')
+block main
+	include ./views/home/topTour
+	include ./views/home/popular
+	include ./views/home/gem
+

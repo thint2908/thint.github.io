@@ -1,0 +1,42 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	background: #fff;
+	color: #777e90;
+	line-height: 1;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul,
+ol {
+	list-style-type: none;
+}
+
+input,
+button,
+textarea,
+select {
+	outline: none;
+	font: inherit;
+	border: none;
+	background-color: transparent;
+}
+
+button {
+	cursor: pointer;
+}

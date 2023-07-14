@@ -1,0 +1,30 @@
+mixin tourItem(img,price,title, review, reviewCount, duration, tourPrice) 
+	.tour
+		.tour-top
+			img.tour-img(src=img alt='image')
+			span.tour-price= price
+		.tour-content
+			h3.tour-title=title 
+			.tour-rating
+				.tour-review
+					.tour-star
+						img(src='./img/star.png' alt='star ')
+					.tour-review-count 
+						span= review 
+						|  ( #{reviewCount} reviews)
+				span.tour-duration Duration: #{duration} hours
+			a.tour-btn(href='https://google.com/search?q=?' target='_blank' rel='noopener noreference') Tours price $#{tourPrice}
+
+
+mixin popularItem(img, time,place, review, reviewCount)
+	.popular-item 
+		.popular-top 
+			img.popular-img(src=img, alt="bangkok-night")
+			a.must-see_btn(href="https://vi.wikipedia.org/wiki/B%C4%83ng_C%E1%BB%91c" target="_blank" rel="noopener noreference") Must See
+		.popular-body 
+			.popular-time=time
+			.popular-place=place 
+			.popular-review 
+				span.star-img 
+					img.review-star(src="./img/star.png", alt="*")
+				span.review-count #{review} (#{reviewCount} reviews)
